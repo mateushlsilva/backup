@@ -2,23 +2,15 @@
 
 #################################################################################
 #                                                                               
-#                       Exercício 5                                           	
-# Crie um script que gere um arquivo compactado de backup de todo o diretório
-# home do usuário atual (/home/<usuario>).
-# Considere que:
-# • O arquivo de backup será criado no diretório /home/<usuario>/Backup
-# • O nome do arquivo de backup deve seguir o padrão backup_home_AAAAMMDDHHMM.tgz, exemplo
-# 		backup_home_201708241533.tgz
-# • Caso o diretório /home/<usuario>/Backup não exista, o script deve criá-lo
-# • Antes de criar o backup, o script deve consultar se existe algum arquivo
-# de backup criado na última semana. Se exisitir, o usuário deve ser
-# consultado se deseja continuar. Se o usuário optar por não continuar, o
-# script deve abortar com código de saída 1.
-# • Após gerar o backup, o script deve informar o nome do arquivo gerado.					
+#                       Backup                                           	
+# Esse script vai compactar o diretorio home, em um formato tgz.
+# O nome do arquivo de backup segue o padrão backup_home_AAAAMMDDHHMM.tgz 
+# O arquivo backup_home_AAAAMMDDHHMM.tgz será colocado em um disco secundário.
+# 					
 #                                                                               
 # Autor: Mateus Silva (mateushls01@gmail.com)                                   
 #                                                                               
-# Data Criação: 3/04/2022                                                       
+# Data Criação: 13/12/2022                                                       
 #                                                                               
 #################################################################################
 
