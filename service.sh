@@ -5,11 +5,9 @@ touch /etc/systemd/system/backupHome.service
 echo "[Unit]
 Description="backup da pasta Home"
 After=network.target
-StartLimitIntervalSec=0
+StartLimitIntervalSec=150
 [Service]
 Type=simple
-Restart=always
-RestartSec=1
 User=root
 ExecStart=/bin/bash /opt/backup/backup.sh
  
